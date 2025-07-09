@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bangunnnn Ayu cantikkkkkk 💕</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff0f5;
+            transition: all 0.3s;
+        }
+        
+        .container {
+            max-width: 500px;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+        }
+        
+        .alarm-btn {
+            background: linear-gradient(135deg, #ff6b8b 0%, #ff8e9e 100%);
+            box-shadow: 0 4px 15px rgba(255, 107, 139, 0.4);
+            transform: scale(1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .alarm-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(255, 107, 139, 0.6);
+        }
+        
+        .alarm-btn:active {
+            transform: scale(0.98);
+        }
+        
+        .fox-ears::before, .fox-ears::after {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: #ff6b8b;
+            border-radius: 50% 50% 0 0;
+            top: -15px;
+        }
+        
+        .fox-ears::before {
+            left: 10px;
+            transform: rotate(-45deg);
+        }
+        
+        .fox-ears::after {
+            right: 10px;
+            transform: rotate(45deg);
+        }
+        
+        .message-bubble {
+            background-color: white;
+            border-radius: 20px 20px 20px 0;
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .checkbox-container input:checked ~ .checkmark {
+            background-color: #ff6b8b;
+            border-color: #ff6b8b;
+        }
+        
+        .checkbox-container:hover input ~ .checkmark {
+            background-color: #ffecef;
+        }
+        
+        .checkbox-container input:checked ~ .checkmark:after {
+            display: block;
+        }
+        
+        .checkbox-container .checkmark:after {
+            content: "✓";
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
+    <div class="container bg-white rounded-3xl shadow-xl overflow-hidden">
+        <!-- Header Section with Fox Ears -->
+        <div class="header text-white py-6 px-4 text-center relative fox-ears">
+            <h1 class="text-3xl font-bold">Bangunin ayuuuu cantikkkkk🦊</h1>
+            <p class="mt-2 opacity-90">Wake up your cutie with love!</p>
+        </div>
+        
+        <!-- Main Content -->
+        <div class="p-6">
+            <!-- Fox Avatar -->
+            <div class="flex justify-center mb-6">
+                <div class="relative w-32 h-32">
+                    <div class="absolute inset-0 rounded-full bg-pink-200 flex items-center justify-center">
+                        <img src="https://cdn.rri.co.id/berita/Cirebon/o/1728359609948-wandelen-met-alpacas-world-brielle-2/q7nku0rsp2nggpu.jpeg" alt="Cute pink fox avatar with sleepy eyes and fluffy ears" class="w-full h-full rounded-full object-cover" onerror="this.src='https://via.placeholder.com/128'" />
+                    </div>
+                    <div class="absolute -bottom-2 -right-2 bg-white rounded-full p-2 shadow-md">
+                        <span class="text-pink-500 text-xl">💤</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Alarm Message -->
+            <div class="message-bubble p-4 mb-6 relative max-w-xs mx-auto">
+                <p class="text-gray-700">"Ayo bangun PARUDDDDD! udah sore loh 💕"</p>
+                <div class="absolute -bottom-3 left-0 w-4 h-4 bg-white transform rotate-45"></div>
+            </div>
+            
+            <!-- Alarm Options -->
+            <div class="space-y-4 mb-6">
+                <h3 class="font-semibold text-pink-700 text-center">Pilih Cara Membangunkan:</h3>
+                
+                <div class="checkbox-container flex items-center pl-4 rounded-lg hover:bg-pink-50 p-2 cursor-pointer">
+                    <input type="checkbox" id="option1" class="hidden" checked>
+                    <label for="option1" class="checkmark w-6 h-6 border-2 border-pink-300 rounded-full flex items-center justify-center mr-3"></label>
+                    <label for="option1" class="w-full py-2 cursor-pointer">Telepon Sayang 💖</label>
+                </div>
+                
+                <div class="checkbox-container flex items-center pl-4 rounded-lg hover:bg-pink-50 p-2 cursor-pointer">
+                    <input type="checkbox" id="option2" class="hidden">
+                    <label for="option2" class="checkmark w-6 h-6 border-2 border-pink-300 rounded-full flex items-center justify-center mr-3"></label>
+                    <label for="option2" class="w-full py-2 cursor-pointer">Kirim Pesan Romantis 💌</label>
+                </div>
+                
+                <div class="checkbox-container flex items-center pl-4 rounded-lg hover:bg-pink-50 p-2 cursor-pointer">
+                    <input type="checkbox" id="option3" class="hidden">
+                    <label for="option3" class="checkmark w-6 h-6 border-2 border-pink-300 rounded-full flex items-center justify-center mr-3"></label>
+                    <label for="option3" class="w-full py-2 cursor-pointer">getok pake palu 🔨🪓</label>
+                </div>
+            </div>
+            
+            <!-- Time Picker -->
+            <div class="mb-6">
+                <label for="alarmTime" class="block text-pink-700 font-semibold mb-2 text-center">
+                    Set Jam Bangun:
+                </label>
+                <div class="flex justify-center">
+                    <input type="time" id="alarmTime" class="border-2 border-pink-200 rounded-full px-4 py-2 outline-none focus:border-pink-400 text-center" value="07:00">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Alarm Button -->
+        <div class="px-6 pb-6">
+            <button id="alarmBtn" class="alarm-btn w-full py-4 text-white font-bold rounded-full text-lg">
+                Set Alarm 💝
+            </button>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('alarmBtn').addEventListener('click', function() {
+            const alarmTime = document.getElementById('alarmTime').value;
+            const options = {
+                call: document.getElementById('option1').checked,
+                message: document.getElementById('option2').checked,
+                song: document.getElementById('option3').checked
+            };
+            
+            const hours = parseInt(alarmTime.split(':')[0]);
+            const minutes = parseInt(alarmTime.split(':')[1]);
+            
+            // Create cute confirmation message
+            let actionCount = [options.call, options.message, options.song].filter(Boolean).length;
+            let actionsText = '';
+            
+            if (actionCount === 3) actionsText = 'panggilan, pesan romantis, getok pake palu';
+            else if (actionCount === 2) {
+                if (options.call && options.message) actionsText = 'panggilan dan pesan romantis';
+                else if (options.call && options.song) actionsText = 'panggilan dan getok pake palu';
+                else actionsText = 'pesan romantis dan getok pake palu';
+            }
+            else {
+                if (options.call) actionsText = 'panggilan sayang';
+                else if (options.message) actionsText = 'pesan romantis';
+                else if (options.song) actionsText = 'getok pake palu';
+            }
+            
+            alert(`Alarm berhasil disetel untuk jam ${hours}:${minutes < 10 ? '0'+minutes : minutes} dengan ${actionsText}! 💕\n\nPacar kamu akan dibangunkan dengan penuh cinta~`);
+            
+            // Button animation
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1)';
+            }, 100);
+        });
+        
+        // Make checkboxes interactive
+        document.querySelectorAll('.checkbox-container').forEach(container => {
+            const checkbox = container.querySelector('input[type="checkbox"]');
+            container.addEventListener('click', function() {
+                checkbox.checked = !checkbox.checked;
+            });
+        });
+    </script>
+</body>
+</html>
+
